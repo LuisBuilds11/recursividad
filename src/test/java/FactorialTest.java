@@ -18,7 +18,7 @@ public class FactorialTest {
 
     @Test
     void testFactorialDe0() {
-        assertEquals(0, Factorial.CalcFactorial(0)); 
+        assertEquals(1, Factorial.CalcFactorial(0)); 
     }
 
 
@@ -36,7 +36,7 @@ public class FactorialTest {
 
     @Test
     void testMultiplica7Por0() {
-        assertEquals(7, Factorial.MultiplicaRecursivo(7, 0));
+        assertEquals(0, Factorial.MultiplicaRecursivo(7, 0));
     }
 
 }
