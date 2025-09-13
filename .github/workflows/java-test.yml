@@ -17,3 +17,9 @@ jobs:
 
       - name: Compilar y ejecutar pruebas JUnit
         run: mvn -B clean test
+
+      - name: Subir reportes de pruebas como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: reporte-junit
+          path: target/surefire-reports/
